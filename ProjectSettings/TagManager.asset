@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Edge
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Edge
   - Water
   - UI
   - 
