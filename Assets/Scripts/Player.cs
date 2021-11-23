@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
     Rigidbody2D playerRig;
     float _speed = 0;
     SpriteRenderer spriteRenderer;
-    public float speed = 10;
+    public float speed;
     public static float playerXpos;
+    private bool moveLeft;
+    private bool moveRight;
 
 
     // Start is called before the first frame update
@@ -17,33 +18,37 @@ public class Player : MonoBehaviour
     {
         playerRig = gameObject.GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        speed = 10f;
+        moveLeft = false;
+        moveRight = false;
+    
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        playerXpos = transform.position.x;
+        if (moveLeft)
+        {
+            playerRig.velocity = new Vector2(-speed, 0f);
+        }
+
+        if (moveRight)
+        {
+            playerRig.velocity = new Vector2(speed, 0f);
+        }
     }
 
-    public void FixedUpdate()
+    public void MoveLeft()
     {
-        playerRig.velocity = new Vector2(_speed, playerRig.velocity.y);
+        moveLeft = true;
     }
-
-    public void RunR()
+    public void MoveRight()
     {
-        _speed = speed;
-        spriteRenderer.flipX = true;
+        moveRight = true;
     }
-    public void RunL()
+    public void StopMoving()
     {
-        _speed = -speed;
-        spriteRenderer.flipX = false;
+        moveRight = false;
+        moveLeft = false;
+        playerRig.velocity = Vector2.zero;
     }
-    public void Stop()
-    {
-        _speed = 0; 
-    }
-
-
 }
