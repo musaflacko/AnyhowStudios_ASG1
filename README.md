@@ -6,12 +6,6 @@ This is a simple Covid-19 Mini Game to educate children about how they can fight
 - Toggle AR (Switch On or Off)
 
 ## How to user the application
-1. Start by scanning the given marker to start running the game.
-2. Once game starts, you are able to move the character to the left and right.
-3. The goal of the game is to get rid of the Covid-19 virus, away from the character.
-4. Reach the target score and finish the game.
-5. Educate yourself with relevant Covid-19 materials.
-
 1. The game starts by using your front camera, your playing environment.
 2. There is a crosshair in the middle to aim and a button to toggle your AR camera.
 3. At the start, Covid-19 virus will spawn and start attacking you from all places.
