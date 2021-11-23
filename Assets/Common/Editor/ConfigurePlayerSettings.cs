@@ -71,10 +71,10 @@ namespace Vuforia.EditorClasses
                     PlayerSettings.SetScriptingBackend(iOSBuildTarget, ScriptingImplementation.IL2CPP);
                 }
 
-                if (PlayerSettings.iOS.targetOSVersionString != "11.0")
+                if (PlayerSettings.iOS.targetOSVersionString != "12.0")
                 {
-                    Debug.Log("Setting Minimum iOS Version to 11.0");
-                    PlayerSettings.iOS.targetOSVersionString = "11.0";
+                    Debug.Log("Setting Minimum iOS Version to 12.0");
+                    PlayerSettings.iOS.targetOSVersionString = "12.0";
                 }
 
                 // Here we set the scripting define symbols for IOS
