@@ -17,6 +17,7 @@ This is a simple Covid-19 Mini Game to educate children about how they can fight
 - Unity
 
 ## Limitations or Bugs
+- The main character is only facing one direction
 
 ## References and Credits
 - Mini Game Idea: https://www.youtube.com/watch?v=sMMsOUkHGxY
